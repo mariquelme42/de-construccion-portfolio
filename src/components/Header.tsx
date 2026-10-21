@@ -23,13 +23,22 @@ export function Header() {
     if (!menuOpen) return
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setMenuOpen(false)
     window.addEventListener("keydown", onKey)
-    return () => window.removeEventListener("keydown", onKey)
+    // Bloquea el scroll de la página mientras el menú móvil está abierto
+    document.body.style.overflow = "hidden"
+    return () => {
+      window.removeEventListener("keydown", onKey)
+      document.body.style.overflow = ""
+    }
   }, [menuOpen])
 
   const closeMenu = () => setMenuOpen(false)
 
+  const headerClass = ["site-header", scrolled && "is-scrolled", menuOpen && "is-menu-open"]
+    .filter(Boolean)
+    .join(" ")
+
   return (
-    <header className={scrolled ? "site-header is-scrolled" : "site-header"}>
+    <header className={headerClass}>
       <Link href="#inicio" className="brand" onClick={closeMenu}>
         {brand.name}
         <span>_</span>

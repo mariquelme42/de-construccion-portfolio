@@ -8,6 +8,11 @@ const contactItems = [
     href: `mailto:${externalLinks.email}`,
     detail: externalLinks.email,
   },
+  externalLinks.whatsapp && {
+    label: "WhatsApp",
+    href: `https://wa.me/${externalLinks.whatsapp}`,
+    detail: `+${externalLinks.whatsapp.replace(/^(\d{3})(\d{3})(\d{3})(\d{3})$/, "$1 $2 $3 $4")}`,
+  },
   externalLinks.linkedin && {
     label: "LinkedIn",
     href: externalLinks.linkedin,

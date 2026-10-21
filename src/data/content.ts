@@ -11,6 +11,8 @@ export const brand = {
 // Enlaces reales tomados del CV y de GitHub. Dejar "" para ocultar un enlace.
 export const externalLinks = {
   email: "ma.riquelme@hotmail.com",
+  // Solo dígitos, con código de país (se usa para el enlace wa.me)
+  whatsapp: "595974913737",
   linkedin: "https://www.linkedin.com/in/maria-jose-riquelme-dev",
   github: "https://github.com/mariquelme42",
 }
@@ -66,14 +68,13 @@ export const projects: Project[] = [
     ],
     tools: "React · TypeScript · Vite · Tailwind CSS · Netlify Forms · Figma Make · GitHub",
     result:
-      "Sitio publicado desde abril de 2026 y mantenido con 27 versiones. Gestionó en línea dos convocatorias: Residencia Poética Ruidosa 2026 y Talleres Ruidosos Caaguazú.",
+      "Sitio publicado desde abril de 2026 y mantenido con 27 versiones. Gestionó en línea tres convocatorias: la Convocatoria externa 2026, para publicar obras poéticas de autoras y autores fuera de la editorial, la Residencia Poética Ruidosa 2026 y los Talleres Ruidosos Caaguazú.",
     learning:
       "Traducir una identidad colectiva a una estructura digital sin perder su voz, y sostenerla en el tiempo con cambios pequeños y frecuentes.",
     visual: "ruido",
     facts: [
       ["23", "publicaciones en la biblioteca digital"],
-      ["2", "convocatorias gestionadas en línea"],
-      ["20", "poetas de 7 departamentos en la Residencia Poética Ruidosa 2026"],
+      ["3", "convocatorias gestionadas en línea"],
       ["27", "versiones del sitio desde abril de 2026"],
     ],
     gallery: [
@@ -291,7 +292,7 @@ export const about = {
   titleAccent: "comprensibles y accionables.",
   lead: "Soy María José Riquelme. Trabajo entre producto, gestión de proyectos y desarrollo tecnológico, conectando necesidades de negocio con procesos y soluciones digitales.",
   paragraphs: [
-    "Desde 2021 trabajo en banca digital en Paraguay, definiendo productos, relevando procesos, priorizando backlogs y coordinando equipos de negocio, tecnología y proveedores. En paralelo estudio Análisis de Sistemas y Letras.",
+    "Desde 2021 desarrollo mi experiencia profesional entre la banca digital en Paraguay y proyectos independientes de tecnología y gestión cultural. He trabajado en la definición de productos, el relevamiento de procesos, la priorización de backlogs y la coordinación de equipos de negocio, tecnología y proveedores; y también he impulsado proyectos propios, explorando cómo conectar ideas, personas y herramientas para convertirlas en soluciones concretas. En paralelo, estudio Análisis de Sistemas y Letras.",
     "Mi diferencial está justamente en esa mezcla: la carrera de Letras me enseña a leer entre líneas, entender contextos, encontrar las palabras precisas y ordenar ideas complejas sin perder sus matices. El Análisis de Sistemas me da las herramientas para llevar esas ideas a tierra, entender cómo funcionan las cosas y conversar de igual a igual con quienes las construyen. Y desde la gestión cultural, con Jasy Kultural y Ruido Visual, aprendí que los proyectos no se sostienen solo con buenas ideas: también hacen falta iniciativa, organización, capacidad de adaptación y muchas ganas de hacer que las cosas sucedan, incluso cuando los recursos son pocos y las personas involucradas son muchas.",
   ],
 }

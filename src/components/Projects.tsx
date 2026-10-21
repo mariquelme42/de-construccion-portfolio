@@ -24,17 +24,16 @@ function ProjectVisual({ type }: { type: Project["visual"] }) {
 
   if (type === "system") {
     return (
-      <div className="project-visual visual-system" aria-hidden="true">
-        <div className="node node-a">NEGOCIO</div>
-        <div className="node node-b">PROCESO</div>
-        <div className="node node-c">PRODUCTO</div>
-        <div className="node node-d">TECNOLOGÍA</div>
-        <svg viewBox="0 0 800 520" preserveAspectRatio="none">
-          <path d="M120 95C250 90 220 275 380 265S560 120 690 150" />
-          <path d="M120 95C210 230 180 400 370 420S590 340 670 380" />
-          <path d="M380 265C470 300 540 375 670 380" />
-        </svg>
-      </div>
+      <figure className="project-visual visual-system">
+        <img
+          src="images/producto/people-working.webp"
+          alt="Ilustración de dos personas trabajando juntas frente a una computadora con pantallas de contenido digital"
+          width={2000}
+          height={1280}
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
     )
   }
 
