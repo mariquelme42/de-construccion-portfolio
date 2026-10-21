@@ -1,0 +1,14 @@
+# Dependencias y build
+node_modules
+dist
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Variables locales y logs
+.env*.local
+*.log
